@@ -7,7 +7,7 @@
   <meta name="description" content="Groove Ave is a soul and funk band bringing warmth, rhythm, and groove to every stage." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Lato:wght@300;400;700&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
@@ -35,9 +35,15 @@
   <section class="hero" id="hero">
     <div class="hero__texture"></div>
     <div class="hero__content">
-      <p class="hero__eyebrow">Established in the city</p>
-      <h1 class="hero__title">Groove Ave</h1>
-      <p class="hero__tagline">Soul on the Street.<br />Groove in Your Bones.</p>
+      <div class="hero__sign">
+        <div class="hero__sign-border"></div>
+        <h1 class="hero__title">GROOVE <span>Ave</span></h1>
+        <div class="hero__sign-border"></div>
+      </div>
+      <p class="hero__tagline">Music to Groove To!</p>
+      <div class="hero__banner">
+        <img src="images/Groove%20Ave%20Banner.jpg" alt="Groove Ave — Music to Groove To!" class="hero__banner-img" />
+      </div>
       <div class="hero__actions">
         <a href="#shows" class="btn btn--primary">See Us Live</a>
         <a href="#music" class="btn btn--outline">Listen Now</a>
@@ -54,7 +60,7 @@
     <div class="container">
       <div class="section__header">
         <p class="section__label">Who We Are</p>
-        <h2 class="section__title">The Band</h2>
+        <h2 class="section__title"><span class="sign-text">The Band</span></h2>
       </div>
       <div class="about__grid">
         <div class="about__bio">
@@ -113,7 +119,7 @@
     <div class="container">
       <div class="section__header">
         <p class="section__label">Discography</p>
-        <h2 class="section__title">Our Music</h2>
+        <h2 class="section__title"><span class="sign-text">Our Music</span></h2>
       </div>
       <div class="music__releases">
         <div class="release-card">
@@ -160,7 +166,7 @@
     <div class="container">
       <div class="section__header">
         <p class="section__label">Upcoming Gigs</p>
-        <h2 class="section__title">Shows</h2>
+        <h2 class="section__title"><span class="sign-text">Shows</span></h2>
       </div>
       <div class="shows__list">
 
@@ -212,13 +218,11 @@
     <div class="container">
       <div class="section__header">
         <p class="section__label">Live &amp; In the Studio</p>
-        <h2 class="section__title">Gallery</h2>
+        <h2 class="section__title"><span class="sign-text">Gallery</span></h2>
       </div>
       <div class="gallery__grid">
-        <div class="gallery__item gallery__item--large" aria-label="Band photo placeholder 1">
-          <div class="gallery__placeholder gallery__placeholder--1">
-            <span>Band on Stage</span>
-          </div>
+        <div class="gallery__item gallery__item--large" aria-label="Groove Ave band photo">
+          <img src="images/Groove%20Ave%20Banner.jpg" alt="Groove Ave" class="gallery__img" />
         </div>
         <div class="gallery__item" aria-label="Band photo placeholder 2">
           <div class="gallery__placeholder gallery__placeholder--2">
@@ -268,7 +272,7 @@
       <div class="contact__grid">
         <div class="contact__intro">
           <p class="section__label">Get In Touch</p>
-          <h2 class="section__title">Book Groove Ave</h2>
+          <h2 class="section__title"><span class="sign-text">Book Groove Ave</span></h2>
           <p>Interested in booking us for your event, festival, or venue? We'd love to hear from you. Fill out the form and we'll get back to you within 48 hours.</p>
           <ul class="contact__details">
             <li>
