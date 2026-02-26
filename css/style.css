@@ -532,83 +532,18 @@ ul { list-style: none; }
   background: var(--color-red);
 }
 
-.shows__list {
-  display: flex;
-  flex-direction: column;
-  gap: 1px;
+.cal-embed-wrap {
   border: 1px solid var(--color-border);
   border-radius: 4px;
   overflow: hidden;
-}
-
-.show-item {
-  display: grid;
-  grid-template-columns: 80px 1fr auto auto auto;
-  align-items: center;
-  gap: var(--space-md);
-  padding: var(--space-sm) var(--space-md);
   background: var(--color-surface-2);
-  transition: background var(--duration) var(--ease);
-}
-.show-item:hover { background: var(--color-surface); }
-.show-item + .show-item { border-top: 1px solid var(--color-border); }
-
-.show-item__date {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  line-height: 1;
-}
-.show-item__month {
-  font-size: 0.65rem;
-  font-weight: 700;
-  letter-spacing: 0.15em;
-  text-transform: uppercase;
-  color: var(--color-red);
-}
-.show-item__day {
-  font-family: var(--font-sign);
-  font-size: 2rem;
-  font-weight: 700;
-  color: var(--color-text);
-  line-height: 1.1;
 }
 
-.show-item__venue {
-  font-family: var(--font-display);
-  font-size: 1.1rem;
-  font-weight: 700;
-  color: var(--color-text);
-  margin-bottom: 2px;
-}
-.show-item__location {
-  font-size: 0.8rem;
-  color: var(--color-text-muted);
-}
-
-.show-item__time {
-  font-size: 0.85rem;
-  font-weight: 700;
-  color: var(--color-text-muted);
-  letter-spacing: 0.05em;
-}
-
-.show-item__cal-link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--color-text-muted);
-  border: 1px solid var(--color-border);
-  border-radius: 2px;
-  padding: 6px;
-  transition: color var(--duration) var(--ease),
-              border-color var(--duration) var(--ease),
-              background var(--duration) var(--ease);
-}
-.show-item__cal-link:hover {
-  color: var(--color-green-light);
-  border-color: var(--color-green);
-  background: var(--color-green-dim);
+.cal-embed {
+  display: block;
+  width: 100%;
+  height: 520px;
+  border: none;
 }
 
 .shows__subscribe {
@@ -963,13 +898,7 @@ ul { list-style: none; }
   }
   .nav__links a { font-size: 1rem; }
 
-  .show-item {
-    grid-template-columns: 60px 1fr auto auto;
-    grid-template-rows: auto auto;
-  }
-  .show-item__time { display: none; }
-  .show-item__ticket { grid-column: 2; }
-  .show-item__cal-link { grid-column: 3; grid-row: 2; }
+  .cal-embed { height: 420px; }
 
   .about__members {
     grid-template-columns: repeat(2, 1fr);

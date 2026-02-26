@@ -120,61 +120,28 @@
         <p class="section__label">Upcoming Gigs</p>
         <h2 class="section__title"><span class="sign-text">Shows</span></h2>
       </div>
-      <div class="shows__list">
-
-        <div class="show-item">
-          <div class="show-item__date">
-            <span class="show-item__month">Mar</span>
-            <span class="show-item__day">14</span>
-          </div>
-          <div class="show-item__info">
-            <h3 class="show-item__venue">The Velvet Lounge</h3>
-            <p class="show-item__location">Chicago, IL</p>
-          </div>
-          <div class="show-item__time">9:00 PM</div>
-          <a href="#" class="btn btn--primary show-item__ticket" target="_blank" rel="noopener noreferrer">Tickets</a>
-          <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Groove+Ave+%40+The+Velvet+Lounge&dates=20260314T210000/20260314T230000&details=Groove+Ave+live+at+The+Velvet+Lounge&location=The+Velvet+Lounge%2C+Chicago%2C+IL" target="_blank" rel="noopener noreferrer" class="show-item__cal-link" aria-label="Add to Google Calendar">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
-          </a>
-        </div>
-
-        <div class="show-item">
-          <div class="show-item__date">
-            <span class="show-item__month">Apr</span>
-            <span class="show-item__day">05</span>
-          </div>
-          <div class="show-item__info">
-            <h3 class="show-item__venue">Soul City Festival</h3>
-            <p class="show-item__location">Detroit, MI</p>
-          </div>
-          <div class="show-item__time">7:30 PM</div>
-          <a href="#" class="btn btn--primary show-item__ticket" target="_blank" rel="noopener noreferrer">Tickets</a>
-          <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Groove+Ave+%40+Soul+City+Festival&dates=20260405T193000/20260405T213000&details=Groove+Ave+live+at+Soul+City+Festival&location=Soul+City+Festival%2C+Detroit%2C+MI" target="_blank" rel="noopener noreferrer" class="show-item__cal-link" aria-label="Add to Google Calendar">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
-          </a>
-        </div>
-
-        <div class="show-item">
-          <div class="show-item__date">
-            <span class="show-item__month">Apr</span>
-            <span class="show-item__day">22</span>
-          </div>
-          <div class="show-item__info">
-            <h3 class="show-item__venue">The Groove Room</h3>
-            <p class="show-item__location">Nashville, TN</p>
-          </div>
-          <div class="show-item__time">8:00 PM</div>
-          <a href="#" class="btn btn--outline show-item__ticket" target="_blank" rel="noopener noreferrer">Free Entry</a>
-          <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Groove+Ave+%40+The+Groove+Room&dates=20260422T200000/20260422T220000&details=Groove+Ave+live+at+The+Groove+Room&location=The+Groove+Room%2C+Nashville%2C+TN" target="_blank" rel="noopener noreferrer" class="show-item__cal-link" aria-label="Add to Google Calendar">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
-          </a>
-        </div>
-
+      <!--
+        SETUP INSTRUCTIONS — Google Calendar embed
+        ==========================================
+        1. Open Google Calendar (calendar.google.com)
+        2. In the left sidebar, hover the calendar you want to use → click ⋮ → "Settings and sharing"
+        3. Under "Access permissions for events", tick "Make available to public"
+        4. Scroll to "Integrate calendar" → copy the Calendar ID (looks like an email address)
+        5. Replace YOUR_CALENDAR_ID in the iframe src below with that ID
+        6. Adjust the ctz= timezone if needed (e.g. America/Chicago, America/New_York)
+        7. Also paste the Calendar ID into the "Subscribe" button href, replacing YOUR_CALENDAR_ID
+      -->
+      <div class="cal-embed-wrap">
+        <iframe
+          class="cal-embed"
+          src="https://calendar.google.com/calendar/embed?src=b6a4f598f61250e58d9041edd2380212d1982eef77f4059341ce5c4a7f7049c8@group.calendar.google.com&ctz=America%2FChicago&mode=AGENDA&showTitle=0&showNav=1&showDate=1&showPrint=0&showTabs=0&showCalendars=0"
+          frameborder="0"
+          scrolling="no"
+          title="Groove Ave Shows Calendar"
+        ></iframe>
       </div>
       <div class="shows__subscribe">
-        <!-- Replace the href with your public Google Calendar URL once set up:
-             https://calendar.google.com/calendar/embed?src=YOUR_CALENDAR_ID -->
-        <a href="#" class="btn btn--outline shows__subscribe-btn" target="_blank" rel="noopener noreferrer">
+        <a href="https://calendar.google.com/calendar/r?cid=b6a4f598f61250e58d9041edd2380212d1982eef77f4059341ce5c4a7f7049c8@group.calendar.google.com" class="btn btn--outline shows__subscribe-btn" target="_blank" rel="noopener noreferrer">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
           Subscribe to Our Calendar
         </a>
