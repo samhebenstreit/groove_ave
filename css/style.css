@@ -678,23 +678,18 @@ ul { list-style: none; }
   background: var(--color-red);
 }
 
-.contact__grid {
-  display: grid;
-  grid-template-columns: 1fr 1.4fr;
-  gap: var(--space-xl);
-  align-items: start;
-}
-
-.contact__intro p {
+.contact__blurb {
   color: var(--color-text-muted);
   margin-bottom: var(--space-md);
   font-size: 1.05rem;
+  text-align: center;
 }
 
 .contact__details {
   display: flex;
   flex-direction: column;
   gap: var(--space-xs);
+  align-items: center;
 }
 .contact__details li {
   display: flex;
@@ -706,77 +701,6 @@ ul { list-style: none; }
 .contact__details svg { color: var(--color-green-light); flex-shrink: 0; }
 .contact__details a { color: var(--color-text-muted); }
 .contact__details a:hover { color: var(--color-green-light); }
-
-/* Form */
-.contact__form {
-  display: flex;
-  flex-direction: column;
-  gap: var(--space-sm);
-}
-
-.form-group {
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
-}
-
-.form-group label {
-  font-size: 0.75rem;
-  font-weight: 700;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: var(--color-text-muted);
-}
-
-.form-group input,
-.form-group select,
-.form-group textarea {
-  width: 100%;
-  background: var(--color-bg);
-  border: 1px solid var(--color-border);
-  border-radius: 2px;
-  color: var(--color-text);
-  font-family: var(--font-body);
-  font-size: 0.95rem;
-  padding: 0.75rem 1rem;
-  transition: border-color var(--duration) var(--ease);
-  outline: none;
-  appearance: none;
-}
-
-.form-group input::placeholder,
-.form-group textarea::placeholder { color: var(--color-text-muted); opacity: 0.6; }
-
-.form-group input:focus,
-.form-group select:focus,
-.form-group textarea:focus {
-  border-color: var(--color-green-light);
-  box-shadow: 0 0 0 3px rgba(27, 107, 51, 0.15);
-}
-
-.form-group select {
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%239caa8c' stroke-width='2'%3E%3Cpolyline points='6 9 12 15 18 9'/%3E%3C/svg%3E");
-  background-repeat: no-repeat;
-  background-position: right 1rem center;
-  padding-right: 2.5rem;
-  cursor: pointer;
-}
-
-.form-group textarea { resize: vertical; min-height: 120px; }
-
-.form-success {
-  padding: var(--space-sm);
-  border-radius: 2px;
-  font-size: 0.9rem;
-  text-align: center;
-  display: none;
-}
-.form-success.visible {
-  display: block;
-  background: rgba(27, 107, 51, 0.12);
-  border: 1px solid var(--color-green);
-  color: var(--color-green-light);
-}
 
 /* ============================================================
    13. FOOTER

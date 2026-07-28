@@ -13,8 +13,6 @@
   const nav        = document.getElementById('nav');
   const hamburger  = document.getElementById('hamburger');
   const navLinks   = document.getElementById('nav-links');
-  const form       = document.getElementById('contact-form');
-  const formMsg    = document.getElementById('form-success');
   const allLinks   = navLinks ? navLinks.querySelectorAll('a[href^="#"]') : [];
   const sections   = document.querySelectorAll('section[id]');
 
@@ -78,55 +76,6 @@
     sections.forEach(function (section) {
       observer.observe(section);
     });
-  }
-
-  /* ── Contact form ─────────────────────────────────────────── */
-  if (form) {
-    form.addEventListener('submit', function (e) {
-      e.preventDefault();
-      formMsg.classList.remove('visible');
-      formMsg.textContent = '';
-
-      // Basic validation
-      const name    = form.querySelector('#name');
-      const email   = form.querySelector('#email');
-      const message = form.querySelector('#message');
-
-      const errors = [];
-      if (!name.value.trim())    errors.push('Please enter your name.');
-      if (!isValidEmail(email.value)) errors.push('Please enter a valid email address.');
-      if (!message.value.trim()) errors.push('Please include a message.');
-
-      if (errors.length) {
-        formMsg.textContent = errors[0];
-        formMsg.style.background = 'rgba(180, 60, 40, 0.12)';
-        formMsg.style.borderColor = '#b43c28';
-        formMsg.style.color = '#e07060';
-        formMsg.classList.add('visible');
-        return;
-      }
-
-      // Simulate successful send
-      const submitBtn = form.querySelector('button[type="submit"]');
-      submitBtn.disabled = true;
-      submitBtn.textContent = 'Sending…';
-
-      setTimeout(function () {
-        form.reset();
-        submitBtn.disabled = false;
-        submitBtn.textContent = 'Send Message';
-        formMsg.textContent = "Thanks! We've received your message and will be in touch within 48 hours.";
-        formMsg.style.background = '';
-        formMsg.style.borderColor = '';
-        formMsg.style.color = '';
-        formMsg.classList.add('visible');
-      }, 800);
-    });
-  }
-
-  /* ── Helpers ──────────────────────────────────────────────── */
-  function isValidEmail(val) {
-    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(val.trim());
   }
 
 })();
