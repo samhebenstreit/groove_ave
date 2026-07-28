@@ -685,22 +685,19 @@ ul { list-style: none; }
   text-align: center;
 }
 
-.contact__details {
+.contact__icons {
   display: flex;
-  flex-direction: column;
-  gap: var(--space-xs);
-  align-items: center;
+  justify-content: center;
+  gap: var(--space-md);
 }
-.contact__details li {
-  display: flex;
-  align-items: center;
-  gap: 10px;
+.contact__icons a {
   color: var(--color-text-muted);
-  font-size: 0.9rem;
+  transition: color var(--duration) var(--ease), transform var(--duration) var(--ease);
 }
-.contact__details svg { color: var(--color-green-light); flex-shrink: 0; }
-.contact__details a { color: var(--color-text-muted); }
-.contact__details a:hover { color: var(--color-green-light); }
+.contact__icons a:hover {
+  color: var(--color-green-light);
+  transform: scale(1.15);
+}
 
 /* ============================================================
    13. FOOTER
