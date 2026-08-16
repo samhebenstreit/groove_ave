@@ -499,10 +499,25 @@ ul { list-style: none; }
   transform: translateY(-3px);
 }
 
+.member-card__photo {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 4px;
+  margin-bottom: var(--space-xs);
+}
+.member-card__photo[src*="john"]   { filter: brightness(0.78) contrast(1.05); }
+.member-card__photo[src*="maggie"] { filter: brightness(1.2) contrast(1.05); }
+.member-card__photo[src*="chuck"]  { filter: brightness(1.12) contrast(1.05); }
+.member-card__photo[src*="gary"]   { filter: brightness(0.92) contrast(1.05); }
+.member-card__photo[src*="chris"]  { filter: brightness(1.05); }
+.member-card__photo[src*="sam"]    { filter: brightness(1.05); }
+
 .member-card__avatar {
-  width: 56px;
-  height: 56px;
-  border-radius: 50%;
+  width: 100%;
+  aspect-ratio: 1;
+  border-radius: 4px;
   background: var(--color-warm-dim);
   border: 2px solid var(--color-warm);
   display: flex;
@@ -510,10 +525,10 @@ ul { list-style: none; }
   justify-content: center;
   font-family: var(--font-sign);
   font-weight: 700;
-  font-size: 0.8rem;
+  font-size: 2rem;
   color: var(--color-warm-light);
   letter-spacing: 0.05em;
-  margin: 0 auto var(--space-xs);
+  margin-bottom: var(--space-xs);
 }
 
 .member-card__name {
