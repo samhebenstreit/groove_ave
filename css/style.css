@@ -638,6 +638,56 @@ ul { list-style: none; }
   font-size: 0.8rem;
 }
 
+.shows__tickets {
+  margin-bottom: var(--space-lg);
+}
+
+.shows__tickets-heading {
+  font-family: var(--font-sign);
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--color-warm);
+  margin-bottom: var(--space-sm);
+  text-align: center;
+}
+
+.shows__ticket {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-md);
+  background: linear-gradient(135deg, var(--color-surface-2), rgba(75, 75, 180, 0.15));
+  border: 2px solid var(--color-warm);
+  border-radius: 16px;
+  padding: var(--space-md) var(--space-lg);
+  margin-bottom: var(--space-sm);
+  box-shadow: 0 4px 24px rgba(232, 184, 74, 0.15),
+              0 2px 12px rgba(0, 0, 0, 0.3);
+}
+
+.shows__ticket-venue {
+  font-family: var(--font-display);
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--color-text);
+}
+
+.shows__ticket .btn {
+  font-size: 0.95rem;
+  padding: 0.85rem 2rem;
+  white-space: nowrap;
+}
+
+@media (max-width: 680px) {
+  .shows__ticket {
+    flex-direction: column;
+    text-align: center;
+    gap: var(--space-xs);
+  }
+}
+
 /* ============================================================
    11. TIPS
    ============================================================ */
